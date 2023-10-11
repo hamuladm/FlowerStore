@@ -39,10 +39,11 @@ public class FlowerTest {
 
     @Test
     public void testFlowerPack() {
-        Assertions.assertEquals(1, flowerPack.getQuantity());
         int quant = 30;
+        Assertions.assertEquals(1, flowerPack.getQuantity());
         flowerPack.setQuantity(quant);
         Assertions.assertEquals(quant, flowerPack.getQuantity());
-        Assertions.assertEquals(quant * flower.getPrice(), flowerPack.getPrice());
+        Assertions.assertEquals(quant * flower.getPrice(),
+        flowerPack.getPrice());
     }
 }
