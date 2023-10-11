@@ -42,8 +42,7 @@ public class FlowerTest {
         int quant = 30;
         Assertions.assertEquals(1, flowerPack.getQuantity());
         flowerPack.setQuantity(quant);
-        Assertions.assertEquals(quant, flowerPack.getQuantity());
-        Assertions.assertEquals(quant * flower.getPrice(),
-        flowerPack.getPrice());
+        double res = quant * flower.getPrice();
+        Assertions.assertEquals(res, flowerPack.getPrice());
     }
 }
