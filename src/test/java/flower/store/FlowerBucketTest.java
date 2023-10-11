@@ -30,6 +30,7 @@ public class FlowerBucketTest {
         int quantity = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
         Flower flower = new Flower();
         flower.setFlowerType(FlowerType.ROSE);
+        Assertions.assertEquals(FlowerType.ROSE, flower.getFlowerType());
         flower.setPrice(price);
         FlowerPack flowerPack = new FlowerPack(flower, quantity);
         flowerBucket.addFlowerPack(flowerPack);
