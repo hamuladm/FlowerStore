@@ -13,7 +13,7 @@ public class Flower {
     private double price;
     private FlowerType flowerType;
 
-    public Flower(Flower flower){
+    public Flower(Flower flower) {
         this.color = flower.color;
         this.sepalLength = flower.sepalLength;
         this.price = flower.price;

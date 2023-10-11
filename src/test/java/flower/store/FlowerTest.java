@@ -38,10 +38,10 @@ public class FlowerTest {
     }
 
     @Test
-    public void testFlowerPack(){
+    public void testFlowerPack() {
         Assertions.assertEquals(1, flowerPack.getQuantity());
-        flowerPack.setQuantity(20);
-        Assertions.assertEquals(20, flowerPack.getQuantity());
-        Assertions.assertEquals(20 * flower.getPrice(), flowerPack.getPrice());
+        flowerPack.setQuantity(30);
+        Assertions.assertEquals(30, flowerPack.getQuantity());
+        Assertions.assertEquals(30 * flower.getPrice(), flowerPack.getPrice());
     }
 }
