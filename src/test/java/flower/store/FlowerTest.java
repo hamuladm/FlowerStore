@@ -40,8 +40,9 @@ public class FlowerTest {
     @Test
     public void testFlowerPack() {
         Assertions.assertEquals(1, flowerPack.getQuantity());
-        flowerPack.setQuantity(30);
-        Assertions.assertEquals(30, flowerPack.getQuantity());
-        Assertions.assertEquals(30 * flower.getPrice(), flowerPack.getPrice());
+        int quant = 30;
+        flowerPack.setQuantity(quant);
+        Assertions.assertEquals(quant, flowerPack.getQuantity());
+        Assertions.assertEquals(quant * flower.getPrice(), flowerPack.getPrice());
     }
 }
